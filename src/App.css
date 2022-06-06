@@ -26,7 +26,7 @@ body {
 }
 
 section {
-  margin-top: 144px;
+  margin-top: 210px;
 }
 
 li {
@@ -210,7 +210,8 @@ ABOUT
   width: 100%;
 }
 
-.about__title {
+.about__title,
+.services__title {
   font-size: 72px;
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
@@ -240,3 +241,82 @@ ABOUT
   font-weight: 600;
   width: 50%;
 }
+
+
+/*
+
+SERVICES
+
+*/
+#services {
+  width: 100%;
+}
+
+.services__sub-title {
+  color: var(--bubblegum-blue);
+  font-size: 48px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 80px;
+}
+
+.services__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.service {
+  border-radius: 8px;
+  background-color: var(--dust-grey);
+  padding: 32px;
+  width: 426px;
+  height: 386px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+
+.service__img {
+  height: 64px;
+}
+
+.service__title {
+  color: var(--wraith-black);
+  font-size: 24px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.service__btn {
+  border: none;
+  background-color: transparent;
+  margin-top: 24px;
+  display: flex;
+}
+
+.service__btn:hover {
+  cursor: pointer;
+}
+
+.service__btn:hover .service__btn--img {
+  transform: translateX(24px);
+}
+
+.service__btn--title {
+  color: var(--coral-pink);
+  font-size: 24px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+}
+
+.service__btn--img {
+  margin-left: 16px;
+  transition: all 300ms ease;
+}
+
+
+
