@@ -1,7 +1,8 @@
 import './App.css';
-import Wave from './wave.svg';
-import Hero from './components/Hero';
 import Navigation from './components/Navigation';
+import Hero from './components/Hero';
+import Wave from './wave.svg';
+import About from './components/About';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Navigation />
         <Hero />
         <img src={Wave} alt="Wave" className="wave" />
+        <About />
       </div>
   );
 }
