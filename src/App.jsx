@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Wave from './wave.svg';
 import About from './components/About';
 import Services from './components/Services';
+import Work from './components/Work';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <img src={Wave} alt="Wave" className="wave" />
         <About />
         <Services />
+        <Work />
       </div>
   );
 }
