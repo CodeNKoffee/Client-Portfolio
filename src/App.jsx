@@ -5,6 +5,7 @@ import Wave from './wave.svg';
 import About from './components/About';
 import Services from './components/Services';
 import Work from './components/Work';
+import Testimonials from './components/Testimonials';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Services />
         <Work />
+        <Testimonials />
       </div>
   );
 }

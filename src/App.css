@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Josefin+Sans:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Josefin+Sans:wght@300;400;600;700&display=swap");
 
 :root {
   --wraith-black: #000;
-  --bubblegum-blue: #75C3D0;
-  --angel-white: #FFF;
-  --dust-grey: #EDEDED;
-  --space-grey: #D9D9D9;
-  --coral-pink: #FFACA7;
+  --bubblegum-blue: #75c3d0;
+  --angel-white: #fff;
+  --dust-grey: #ededed;
+  --space-grey: #d9d9d9;
+  --coral-pink: #ffaca7;
 }
 
 * {
@@ -62,7 +62,6 @@ a {
   color: var(--bubblegum-blue);
 }
 
-
 /*
 
 NAVIGATION BAR
@@ -98,11 +97,10 @@ NAVIGATION BAR
 }
 
 .nav__link--anchor {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 500;
   color: var(--angel-white);
 }
-
 
 /*
 
@@ -149,7 +147,7 @@ HERO
 .hero__title {
   font-size: 64px;
   font-weight: 700;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   -webkit-text-stroke: 4px var(--angel-white);
   -webkit-text-fill-color: transparent;
   margin-bottom: 32px;
@@ -164,7 +162,7 @@ HERO
 
 .hero__sub-title {
   font-size: 40px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   color: var(--angel-white);
   margin-bottom: 8px;
@@ -172,7 +170,7 @@ HERO
 
 .hero__btn {
   font-size: 40px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 500;
   background-color: var(--angel-white);
   color: var(--coral-pink);
@@ -200,7 +198,6 @@ HERO
   width: 100%;
 }
 
-
 /*
 
 ABOUT
@@ -212,9 +209,10 @@ ABOUT
 
 .about__title,
 .services__title,
-.work__title {
+.work__title,
+.testimonials__title {
   font-size: 72px;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 700;
   text-align: center;
   margin-bottom: 56px;
@@ -238,11 +236,10 @@ ABOUT
 .about__para {
   line-height: 1.5;
   font-size: 24px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   width: 50%;
 }
-
 
 /*
 
@@ -254,10 +251,11 @@ SERVICES
 }
 
 .services__sub-title,
-.work__sub-title {
+.work__sub-title,
+.testimonials__sub-title {
   color: var(--bubblegum-blue);
   font-size: 48px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   margin-bottom: 80px;
 }
@@ -289,7 +287,7 @@ SERVICES
 .work__card--title {
   color: var(--wraith-black);
   font-size: 24px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   margin-top: 40px;
 }
@@ -316,7 +314,7 @@ SERVICES
 .work__btn--title {
   color: var(--coral-pink);
   font-size: 24px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -325,7 +323,6 @@ SERVICES
   margin-left: 16px;
   transition: all 300ms ease;
 }
-
 
 /*
 
@@ -374,4 +371,87 @@ WORK
 
 .work__btn--title {
   color: var(--bubblegum-blue);
+}
+
+/*
+
+TESTIMONIALS
+
+*/
+#testimonials {
+  width: 100%;
+}
+
+.testimonial {
+  background-color: var(--dust-grey);
+  border-radius: 8px;
+  padding: 32px;
+  width: 406px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.testimonials__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonial__icon {
+  margin-bottom: 40px;
+  width: 56px;
+}
+
+.testimonial__para {
+  line-height: 1.5;
+  color: var(--wraith-black);
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.testimonial__date {
+  margin-bottom: 40px;
+}
+
+.testimonial__quoter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial__img--wrapper {
+  width: 72px;
+  height: 72px;
+}
+
+.testimonial__img {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.testimonial__cite {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.testimonial__cite--name,
+.testimonial__cite--status,
+.testimonial__date {
+  color: var(--wraith-black);
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.testimonial__cite--status,
+.testimonial__date {
+  font-size: 16px;
 }
