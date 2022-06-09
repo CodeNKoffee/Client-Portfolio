@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <div>
       <img src={BackgroundImg} alt="" className="bg" />
-      <nav className="nav__bar">
+      <nav id="nav" className="nav__bar">
         <figure className="logo__wrapper">
           <img src={NavLogo} alt="Logo" className="logo" />
         </figure>
