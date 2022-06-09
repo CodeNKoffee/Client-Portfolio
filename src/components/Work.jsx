@@ -1,5 +1,4 @@
 import React from 'react';
-import RightArrowIcon from './assets/right_arrow.svg';
 import WorkOneImg from './assets/work_one.png';
 import WorkTwoImg from './assets/work_two.png';
 import WorkThreeImg from './assets/work_three.png';
