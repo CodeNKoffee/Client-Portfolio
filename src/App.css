@@ -210,7 +210,8 @@ ABOUT
 .about__title,
 .services__title,
 .work__title,
-.testimonials__title {
+.testimonials__title,
+.contact__title {
   font-size: 72px;
   font-family: "Dancing Script", cursive;
   font-weight: 700;
@@ -252,7 +253,8 @@ SERVICES
 
 .services__sub-title,
 .work__sub-title,
-.testimonials__sub-title {
+.testimonials__sub-title,
+.contact__sub-title {
   color: var(--bubblegum-blue);
   font-size: 48px;
   font-family: "Josefin Sans", sans-serif;
@@ -466,6 +468,10 @@ CONTACT
   width: 100%;
 }
 
+.contact__sub-title {
+  color: var(--coral-pink);
+}
+
 .contact__btns {
   width: 80%;
   display: flex;
@@ -474,5 +480,138 @@ CONTACT
 }
 
 .contact__btn {
+  position: relative;
   width: calc(80% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms ease;
 }
+
+.contact__btn:hover {
+  transform: scale(1.4);
+}
+
+.contact__btn:hover .contact__btn--logo {
+  color: var(--bubblegum-blue);
+}
+
+.contact__btn:hover .contact__btn--bg {
+  opacity: 0;
+}
+
+.contact__btn--bg {
+  position: relative;
+  transition: all 300ms ease;
+}
+
+.contact__btn--logo {
+  position: absolute;
+  color: var(--angel-white);
+  font-size: 48px;
+  transition: all 300ms ease;
+}
+
+.contact__content {
+  margin-top: 180px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Form */
+.contact__form {
+  border: 2PX solid var(--wraith-black);
+  border-radius: 8px;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 56px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.field {
+  margin-bottom: 56px;
+}
+
+.name__group,
+.email__group,
+.msg__group {
+  position: relative;
+  margin-top: 8px;
+  padding: 16px 0 0;
+  width: 100%;
+}
+
+.name__field,
+.email__field,
+.msg__field {
+  border: 0;
+  border-bottom: 2px solid var(--wraith-black);
+  background-color: transparent;
+  color: var(--coral-pink);
+  outline: 0;
+  font-size: 32px;
+  padding: 32px 0 0;
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+.name__field::placeholder,
+.email__field::placeholder,
+.msg__field::placeholder {
+  color: transparent;
+}
+
+.name__field:placeholder-shown ~ .name__label,
+.email__field:placeholder-shown ~ .email__label,
+.msg__field:placeholder-shown ~ .msg__label {
+  top: 24px;
+  font-size: 32px;
+  cursor: text;
+}
+
+.name__label,
+.email__label,
+.msg__label {
+  position: absolute;
+  top: 0;
+  color: var(--wraith-black);
+  font-size: 32px;
+  display: block;
+  transition: 0.2s;
+}
+
+.name__field:focus,
+.email__field:focus,
+.msg__field:focus {
+  border-width: 4px;
+  border-image: linear-gradient(48deg, var(--coral-pink) 50%, var(--bubblegum-blue) 50%);
+  border-image-slice: 50;
+  color: var(--wraith-black);
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.name__field:focus ~ .name__label,
+.email__field:focus ~ .email__label,
+.msg__field:focus ~ .msg__label {
+  position: absolute;
+  top: 0;
+  color: var(--bubblegum-blue);
+  font-size: 24px;
+  font-weight: 700;
+  display: block;
+  transition: 0.2s;
+}
+
+.name__field:required,
+.name__field:invalid,
+.email__field:required,
+.email__field:invalid,
+.msg__field:required,
+.msg__field:invalid {
+  box-shadow: none;
+}
+
