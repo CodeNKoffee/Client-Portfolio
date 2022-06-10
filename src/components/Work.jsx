@@ -23,7 +23,7 @@ const Work = () => {
             />
             <WorkCard
               img={WorkTwoImg}
-              title="Makeup`"
+              title="Makeup"
             />
             <WorkCard
               img={WorkThreeImg}
