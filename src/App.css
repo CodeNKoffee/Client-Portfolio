@@ -318,7 +318,8 @@ SERVICES
 	display: none;
 }
 
-:checked + .service__card {
+:checked + .service__card,
+:checked + .service__btn--title {
 	transform: rotateY(180deg);
 }
 .service:hover :checked + .service__card {
@@ -338,12 +339,6 @@ SERVICES
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   margin-top: 40px;
-}
-
-.service__card--front p,
-.service__card--back .click {
-	font-size: 18px;
-	font-weight: 600;
 }
 
 .service__back--title {
@@ -401,53 +396,6 @@ SERVICES
 WORK
 
 */
-.services__sub-title,
-.work__sub-title,
-.testimonials__sub-title,
-.contact__sub-title {
-  color: var(--bubblegum-blue);
-  font-size: 48px;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-  margin-bottom: 80px;
-}
-
-.work__card--title {
-  color: var(--wraith-black);
-  font-size: 24px;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-  margin-top: 40px;
-}
-
-.work__btn {
-  border: none;
-  background-color: transparent;
-  margin-top: 24px;
-  display: flex;
-}
-
-.work__btn:hover {
-  cursor: pointer;
-}
-
-.work__btn:hover .work__btn--img {
-  transform: translateX(24px);
-}
-
-.work__btn--title {
-  color: var(--coral-pink);
-  font-size: 24px;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-}
-
-.work__btn--img {
-  margin-left: 16px;
-  transition: all 300ms ease;
-}
-
-/* Original */
 #work {
   width: 100%;
 }
