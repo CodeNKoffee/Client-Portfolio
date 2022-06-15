@@ -3,11 +3,8 @@ import TestimonialCard from './TestimonialCard';
 import QuotesIcon from './assets/quote_left.svg';
 import PfpOne from './assets/pfp_1.png';
 import PfpTwo from './assets/pfp_2.png';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
-import 'swiper/css';
+import Swipers from './Swipers';
 
 const Testimonials = () => {
   return (
@@ -21,7 +18,7 @@ const Testimonials = () => {
             Testimonials
           </h3>
           <div className="testimonials__content">
-            <TestimonialCard 
+            {/* <TestimonialCard 
               icon={QuotesIcon}
               iconName="Quotations"
               para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
@@ -42,7 +39,8 @@ const Testimonials = () => {
               imgName="Farah Zeiad"
               personName="Farah Zeiad"
               personStatus="High School Graduate"
-            />
+            /> */}
+            <Swipers />
           </div>
         </div>
       </div>

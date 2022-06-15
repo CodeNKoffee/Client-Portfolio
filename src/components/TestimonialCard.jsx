@@ -2,7 +2,7 @@ import React from 'react';
 
 const TestimonialCard = (props) => {
   return (
-    <div className="testimonial">
+    <div className="testimonial swiper-slide">
       <img src={props.icon} alt={props.iconName} className="testimonial__icon" />
       <p className="testimonial__para">{props.para}</p>
       <span className="testimonial__date">{props.date}</span>
