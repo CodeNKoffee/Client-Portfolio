@@ -15,6 +15,7 @@ const Swipers = () => {
   return (
     <Swiper 
       modules={[Navigation, Pagination, Scrollbar, A11y]}
+      // Default parameters
       spaceBetween={180}
       slidesPerView={2}
       navigation

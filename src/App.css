@@ -357,7 +357,8 @@ SERVICES
 }
 
 .service {
-	width: 426px;
+	width: 45%;
+  max-width: 426px;
   height: 386px;
 	perspective: 1000px;
 	transform-style: preserve-3d;
@@ -502,7 +503,7 @@ WORK
 .work__card {
   border-radius: 8px;
   background-color: var(--dust-grey);
-  margin: 0 48px 96px;
+  margin: 0 32px 64px;
   padding: 48px;
   width: 30%;
   display: flex;
@@ -523,6 +524,7 @@ WORK
   color: var(--bubblegum-blue);
 }
 
+
 /*
 
 TESTIMONIALS
@@ -536,7 +538,7 @@ TESTIMONIALS
   background-color: var(--dust-grey);
   border-radius: 8px;
   padding: 32px;
-  width: 406px;
+  width: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -890,6 +892,10 @@ RESPONSIVENESS
     top: -240px;
     width: 80%;
   }
+
+  .about__para {
+    font-size: 16px;
+  }
 }
 
 @media(max-width: 768px) {
@@ -933,6 +939,43 @@ RESPONSIVENESS
   .wave {
     position: absolute;
     top: 320px;
+  }
+
+  .about__content,
+  .services__content {
+    flex-direction: column;
+  }
+
+  .about__title,
+  .services__title,
+  .work__title,
+  .testimonials__title,
+  .contact__title {
+    font-size: 56px;
+    margin-bottom: 32px;
+  }
+
+  .about__para {
+    font-size: 24px;
+  }
+
+  .services__sub-title,
+  .work__sub-title,
+  .testimonials__sub-title,
+  .contact__sub-title {
+    font-size: 32px;
+  }
+
+  .about__img--wrapper,
+  .about__para,
+  .service,
+  .work__card {
+    width: 80%;
+    text-align: center;
+  }
+
+  .service {
+    margin-bottom: 64px;
   }
 }
 
@@ -1051,5 +1094,17 @@ RESPONSIVENESS
 
   .wave {
     display: none;
+  }
+
+  .contact__btn--bg {
+    width: 90%;
+  }
+
+  .contact__btn--logo {
+    font-size: 24px;
+  }
+
+  .contact__form {
+    padding: 32px;
   }
 }
