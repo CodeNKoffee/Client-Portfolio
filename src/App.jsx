@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-      <div className="header">
+      <div>
         <Navigation />
         <Hero />
         <img src={Wave} alt="Wave" className="wave" />
