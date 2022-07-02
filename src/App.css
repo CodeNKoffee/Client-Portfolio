@@ -597,6 +597,14 @@ TESTIMONIALS
   align-items: start;
 }
 
+.testimonial__cite--name {
+  margin-bottom: 4px;
+}
+
+.testimonial__cite--status {
+  margin-top: 4px;
+}
+
 .testimonial__cite--name,
 .testimonial__cite--status,
 .testimonial__date {
