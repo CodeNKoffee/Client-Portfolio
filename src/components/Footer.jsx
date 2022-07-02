@@ -14,6 +14,9 @@ const Footer = () => {
             <br />
             All Rights Reserved
           </span>
+          <span className="footer__claim--credit">
+              Designed & developed by <a className="footer__claim--credit-link" href="https://www.hatemsoliman.dev/" target="_blank">Hatem Soliman</a>
+            </span>
         </div>
       </div>
     </footer>

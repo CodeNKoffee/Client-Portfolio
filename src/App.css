@@ -843,6 +843,16 @@ FOOTER
   text-align: center;
 }
 
+.footer__claim--credit {
+  font-size: 12px;
+  margin-top: 104px;
+}
+
+.footer__claim--credit-link {
+  font-weight: 700;
+  color: var(--bubblegum-blue);
+}
+
 
 /*
 
