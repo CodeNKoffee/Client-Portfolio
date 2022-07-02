@@ -16,8 +16,21 @@ const Swipers = () => {
     <Swiper 
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       // Default parameters
-      spaceBetween={180}
-      slidesPerView={2}
+      spaceBetween={85}
+      breakpoints={{
+        // when window width is >= 640px
+        320: {
+          width: 320,
+          spaceBetween: 400,
+          slidesPerView: 1,
+        },
+        // when window width is >= 768px
+        1100: {
+          width: 1100,
+          spaceBetween: 85,
+          slidesPerView: 2,
+        },
+      }}
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true, hide: true }}
@@ -59,7 +72,7 @@ const Swipers = () => {
           date="19 March, 2023"
           img={PfpTwo}
           imgName="Farah Zeiad"
-          personName="Farah Zeiad"
+          personName="Malak Ragaie"
           personStatus="High School Graduate"
         />
       </SwiperSlide>
@@ -72,10 +85,36 @@ const Swipers = () => {
           date="29 December, 2027"
           img={PfpOne}
           imgName="Lee Hesham"
-          personName="Lee Hesham"
+          personName="Judy Olama"
           personStatus="Founder of Soul Tribe"
         />
       </SwiperSlide>
+      {/* <SwiperSlide>
+        <TestimonialCard
+          icon={QuotesIcon}
+          iconName="Quotations"
+          para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum."
+          date="29 December, 2027"
+          img={PfpOne}
+          imgName="Lee Hesham"
+          personName="Hatem Soliman"
+          personStatus="Founder of Soul Tribe"
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <TestimonialCard
+          icon={QuotesIcon}
+          iconName="Quotations"
+          para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum."
+          date="29 December, 2027"
+          img={PfpOne}
+          imgName="Lee Hesham"
+          personName="Lina El Karamany"
+          personStatus="Founder of Soul Tribe"
+        />
+      </SwiperSlide> */}
     </Swiper>
   );
 }
