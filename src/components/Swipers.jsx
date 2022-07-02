@@ -16,7 +16,6 @@ const Swipers = () => {
     <Swiper 
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       // Default parameters
-      spaceBetween={85}
       breakpoints={{
         // when window width is >= 640px
         320: {
@@ -27,7 +26,7 @@ const Swipers = () => {
         // when window width is >= 768px
         1100: {
           width: 1100,
-          spaceBetween: 85,
+          spaceBetween: 210,
           slidesPerView: 2,
         },
       }}
