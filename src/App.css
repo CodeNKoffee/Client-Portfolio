@@ -1169,6 +1169,12 @@ RESPONSIVENESS
   }
 }
 
+@media(max-width: 375px) {
+  .swiper-slide {
+    left: -11.3%;
+  }
+}
+
 /* Swiper JS Responsiveness */
 .swiper-container {
   width: 480px;
