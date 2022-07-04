@@ -29,6 +29,36 @@ const Swipers = () => {
           spaceBetween: 210,
           slidesPerView: 2,
         },
+        1500: {
+          width: 1100,
+          spaceBetween: 350,
+          slidesPerView: 2,
+        },
+        1600: {
+          width: 1100,
+          spaceBetween: 520,
+          slidesPerView: 2,
+        },
+        1700: {
+          width: 1100,
+          spaceBetween: 680,
+          slidesPerView: 2,
+        },
+        1800: {
+          width: 1100,
+          spaceBetween: 400,
+          slidesPerView: 3,
+        },
+        1900: {
+          width: 1100,
+          spaceBetween: 430,
+          slidesPerView: 3,
+        },
+        2000: {
+          width: 1100,
+          spaceBetween: 480,
+          slidesPerView: 3,
+        },
       }}
       navigation
       pagination={{ clickable: true }}
