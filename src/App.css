@@ -999,6 +999,10 @@ RESPONSIVENESS
 }
 
 @media(max-width: 468px) {
+  .row {
+    width: 90%;
+  }
+
   .nav__bar {
     margin-bottom: 96px;
     padding: 32px 64px;
@@ -1105,21 +1109,38 @@ RESPONSIVENESS
   }
 }
 
-@media(max-width: 414px) {
+@media(max-width: 414px) {   /* iPhone XR */
   .swiper-slide {
     left: -7%;
   }
 }
 
-@media(max-width: 390px) {
+@media(max-width: 393px) {   /* Pixel 5 */
+  .swiper-slide {
+    left: -9.1%;
+  }
+}
+
+@media(max-width: 390px) {   /* iPhone 12 Pro */
   .swiper-slide {
     left: -9%;
   }
 }
 
-@media(max-width: 375px) {
+@media(max-width: 375px) {   /* iPhone SE */
   .swiper-slide {
     left: -11.3%;
+  }
+
+}
+
+@media(max-width: 360px) {   /* Galaxy S8+ */
+  .swiper-slide {
+    left: -12%;
+  }
+
+  .testimonial {
+    border-radius: 32px;
   }
 }
 
