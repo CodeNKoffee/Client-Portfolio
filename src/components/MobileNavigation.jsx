@@ -13,10 +13,14 @@ const MobileNavigation = () => {
                         className="navigation__mobile--hamburger-icon"
                         onClick={() => setOpen(!open)} 
                       />
+
   const closeIcon = <FontAwesomeIcon icon={faXmark}
                         className="navigation__mobile--close-icon"
                         onClick={() => setOpen(!open)} 
                       />
+
+  // const closeMobileMenu = setOpen(false);
+
   return (
     <div className="navigation__mobile">
       {open ? closeIcon : hamburgerIcon}

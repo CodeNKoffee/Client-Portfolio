@@ -1019,10 +1019,11 @@ RESPONSIVENESS
     right: 0;
     background-color: var(--bubblegum-blue);
     border-radius: 24px 24px 0 0;
+    border-top: 8px solid var(--angel-white);
     width: 100%;
     height: 100vh;
     z-index: 0;
-    padding: 96px 24px 192px;
+    padding: 80px 48px 180px 16px;
     flex-direction: column;
   }
 
