@@ -1,5 +1,5 @@
 import './App.css';
-import Navigation from './components/Navigation';
+import NavigationBar from './components/NavigationBar';
 import Hero from './components/Hero';
 import Wave from './wave.svg';
 import About from './components/About';
@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 function App() {
   return (
       <div>
-        <Navigation />
+        <NavigationBar />
         <Hero />
         <img src={Wave} alt="Wave" className="wave" />
         <About />

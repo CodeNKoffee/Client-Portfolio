@@ -70,13 +70,26 @@ NAVIGATION BAR
 .nav__bar {
   padding: 16px 112px;
   width: 100%;
+  z-index: -1;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav__container--mobile {
+.navigation__mobile {
   display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation__mobile--hamburger-icon,
+.navigation__mobile--close-icon {
+  cursor: pointer;
+  font-size: 56px;
+  color: var(--coral-pink);
+  width: 24px;
+  z-index: 1;
 }
 
 .logo__wrapper {
@@ -106,85 +119,6 @@ NAVIGATION BAR
   color: var(--angel-white);
 }
 
-.btn__menu {
-  background-color: transparent;
-  font-size: 48px;
-  border: none;
-  color: var(--angel-white);
-  display: none;
-  transition: all 300ms ease;
-}
-
-.btn__menu:hover{
-  transform: scale(1.1);
-  color: var(--coral-pink);
-}
-
-.menu__backdrop {
-  position: absolute;
-  background-color: var(--coral-pink);
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 100;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  visibility: hidden;
-  transition: all 300ms ease;
-  opacity: 0;
-  transform: translate(100%);
-}
-
-.menu--open {
-  max-height: 100vh;
-  overflow: hidden;
-  transition: all 300ms ease;
-}
-
-.menu--open .menu__backdrop {
-  visibility: visible;
-  opacity: 1;
-  transform: translate(0);
-}
-
-.menu__links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.menu__list {
-  padding: 32px 0;
-}
-
-.menu__link {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  font-size: 40px;
-}
-
-.menu__link:hover {
-  color: #ff4bed;
-}
-
-.btn__menu--close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  padding: 8px;
-  color: white;
-  transition: all 300ms ease;
-}
-
-.btn__menu--close:hover {
-  transform: scale(1.2);
-  color: #ff4bed;
-}
-
 
 /*
 
@@ -195,6 +129,7 @@ HERO
   position: relative;
   margin-top: 56px;
   width: 100%;
+  z-index: -1;
 }
 
 .hero__content {
@@ -1070,12 +1005,29 @@ RESPONSIVENESS
     padding: 32px 64px;
   }
 
-  .nav__container--mobile {
+  .navigation__desktop {
+    display: none;
+  }
+
+  .navigation__mobile {
     display: block;
   }
 
-  .btn__menu {
-    display: block;
+  .nav__links {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    background-color: var(--bubblegum-blue);
+    border-radius: 24px 24px 0 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    padding: 96px 24px 192px;
+    flex-direction: column;
+  }
+
+  .nav__link {
+    font-size: 40px;
   }
 
   .bg {
@@ -1085,10 +1037,6 @@ RESPONSIVENESS
 
   .logo__wrapper {
     width: 40px;
-  }
-
-  .nav__links {
-    display: none;
   }
 
   .hero__content {
