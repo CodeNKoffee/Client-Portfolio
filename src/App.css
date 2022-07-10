@@ -77,7 +77,7 @@ NAVIGATION BAR
 
 .navigation__mobile {
   z-index: 1;
-  display: none;
+  display: none !important;
   display: flex;
   justify-content: center;
   align-items: center;
