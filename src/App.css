@@ -70,13 +70,13 @@ NAVIGATION BAR
 .nav__bar {
   padding: 16px 112px;
   width: 100%;
-  z-index: -1;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .navigation__mobile {
+  z-index: 1;
   display: none;
   display: flex;
   justify-content: center;
@@ -129,7 +129,6 @@ HERO
   position: relative;
   margin-top: 56px;
   width: 100%;
-  z-index: -1;
 }
 
 .hero__content {
