@@ -1144,6 +1144,12 @@ RESPONSIVENESS
   }
 }
 
+@media(max-width: 280px) {   /* Galaxy Fold */
+  .swiper-slide {
+    left: -22.3%;
+  }
+}
+
 /* Swiper JS Responsiveness */
 .swiper-container {
   width: 480px;
