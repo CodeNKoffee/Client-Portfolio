@@ -4,12 +4,25 @@ import PfpOne from './assets/pfp_1.png';
 import PfpTwo from './assets/pfp_2.png';
 import TestimonialCard from './TestimonialCard';
 
+// import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/react/swiper-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import "swiper/css";  
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/ally';
+
+// swiper bundle styles
+import 'swiper/swiper-bundle.min.css'
+
+// swiper core styles
+import 'swiper/swiper.min.css'
+
+// swiper modules you want to use
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Swipers = () => {
   return (
