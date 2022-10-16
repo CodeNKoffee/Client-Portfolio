@@ -37,7 +37,7 @@ const Contact = () => {
               imgName="Twitter"
             />
             <ContactButton
-              link="https://www.linkedin.com/bassmaelkaramany/"
+              link="https://www.linkedin.com/in/bassma-elkaramany-a62a0b24a/"
               bgUrl={BlueBlob}
               bgName="Blob"
               imgUrl={faLinkedinIn}
