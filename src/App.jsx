@@ -1,5 +1,4 @@
 import './App.css';
-import React from 'react';
 import NavigationBar from './components/NavigationBar';
 import Hero from './components/Hero';
 import Wave from './wave.svg';

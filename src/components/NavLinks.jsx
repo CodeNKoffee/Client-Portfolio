@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion/dist/framer-motion'
+import { motion } from 'framer-motion';
 
 const NavLinks = (props) => {
   const animateFrom = {opacity: 0, y: 40}
