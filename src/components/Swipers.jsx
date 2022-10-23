@@ -87,8 +87,8 @@ const Swipers = () => {
           molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum."
           date="19 March, 2022"
           img={PfpTwo}
-          imgName="Farah Zeiad"
-          personName="Farah Zeiad"
+          imgName="Lee Hesham"
+          personName="Linda Josh"
           personStatus="High School Graduate"
         />
       </SwiperSlide>
@@ -100,8 +100,8 @@ const Swipers = () => {
           molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum."
           date="19 March, 2023"
           img={PfpTwo}
-          imgName="Farah Zeiad"
-          personName="Malak Ragaie"
+          imgName="Lee Heshamh"
+          personName="Winter Adams"
           personStatus="High School Graduate"
         />
       </SwiperSlide>
@@ -114,7 +114,7 @@ const Swipers = () => {
           date="29 December, 2027"
           img={PfpOne}
           imgName="Lee Hesham"
-          personName="Judy Olama"
+          personName="Trisha Blake"
           personStatus="Founder of Soul Tribe"
         />
       </SwiperSlide>
