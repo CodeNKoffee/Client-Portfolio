@@ -3,7 +3,6 @@ import TestimonialCard from './TestimonialCard';
 import QuotesIcon from './assets/quote_left.svg';
 import PfpOne from './assets/pfp_1.png';
 import PfpTwo from './assets/pfp_2.png';
-
 import Swipers from './Swipers';
 
 const Testimonials = () => {
